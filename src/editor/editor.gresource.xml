@@ -1,0 +1,6 @@
+<gresources>
+    <gresource prefix="/org/df458/CloudyEditor">
+        <file preprocess="xml-stripblanks">MainWindow.ui</file>
+        <file>cloudy.css</file>
+    </gresource>
+</gresources>

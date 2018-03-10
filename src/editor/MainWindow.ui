@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.20.0 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <requires lib="dfgame" version="0.0"/>
+  <template class="MainWindow" parent="GtkApplicationWindow">
+    <property name="can_focus">False</property>
+    <property name="window_position">center</property>
+    <property name="default_width">1600</property>
+    <property name="default_height">900</property>
+    <child>
+      <object class="GtkPaned">
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="position">200</property>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkToolPalette">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="orientation">vertical</property>
+                <child>
+                  <object class="GtkToolItemGroup">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="label" translatable="yes">Rails</property>
+                    <child>
+                      <object class="GtkRadioToolButton" id="straight_rail_button">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Straight Rail</property>
+                        <property name="use_underline">True</property>
+                        <property name="active">True</property>
+                        <property name="group">goal_button</property>
+                        <signal name="toggled" handler="tool_changed" swapped="no"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkRadioToolButton" id="circular_rail_button">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Circular Rail</property>
+                        <property name="use_underline">True</property>
+                        <property name="active">True</property>
+                        <property name="group">goal_button</property>
+                        <signal name="toggled" handler="tool_changed" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkToolItemGroup">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="label" translatable="yes">Required</property>
+                    <child>
+                      <object class="GtkRadioToolButton" id="goal_button">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Goal</property>
+                        <property name="use_underline">True</property>
+                        <property name="active">True</property>
+                        <signal name="toggled" handler="tool_changed" swapped="no"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkRadioToolButton" id="bonus_button">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Bonus Star</property>
+                        <property name="use_underline">True</property>
+                        <property name="active">True</property>
+                        <property name="group">goal_button</property>
+                        <signal name="toggled" handler="tool_changed" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkToolItemGroup">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="label" translatable="yes">Misc</property>
+                    <child>
+                      <object class="GtkRadioToolButton" id="cloud_button">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Cloud</property>
+                        <property name="use_underline">True</property>
+                        <property name="active">True</property>
+                        <property name="group">goal_button</property>
+                        <signal name="toggled" handler="tool_changed" swapped="no"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkRadioToolButton" id="strong_cloud_button">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Strong Cloud</property>
+                        <property name="use_underline">True</property>
+                        <property name="active">True</property>
+                        <property name="group">goal_button</property>
+                        <signal name="toggled" handler="tool_changed" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkRadioToolButton" id="spike_button">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Spike Ball</property>
+                        <property name="use_underline">True</property>
+                        <property name="active">True</property>
+                        <property name="group">goal_button</property>
+                        <signal name="toggled" handler="tool_changed" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="position">2</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkToolItemGroup">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="label" translatable="yes">Tools</property>
+                    <child>
+                      <object class="GtkRadioToolButton" id="move_button">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Move Tool</property>
+                        <property name="use_underline">True</property>
+                        <property name="active">True</property>
+                        <property name="group">goal_button</property>
+                        <signal name="toggled" handler="tool_changed" swapped="no"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkRadioToolButton" id="rail_button">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Rail Tool</property>
+                        <property name="use_underline">True</property>
+                        <property name="active">True</property>
+                        <property name="group">goal_button</property>
+                        <signal name="toggled" handler="tool_changed" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="rail_snap_button">
+                <property name="label" translatable="yes">Place on Rail</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <property name="margin_left">12</property>
+                <property name="margin_right">12</property>
+                <property name="draw_indicator">True</property>
+                <signal name="toggled" handler="toggle_rail_snap" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkBox">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="margin_left">12</property>
+                <property name="margin_right">12</property>
+                <property name="margin_top">12</property>
+                <property name="margin_bottom">12</property>
+                <child>
+                  <object class="GtkRadioButton" id="white_button">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="active">True</property>
+                    <property name="draw_indicator">False</property>
+                    <signal name="toggled" handler="color_changed" swapped="no"/>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <style>
+                      <class name="white"/>
+                    </style>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkRadioButton" id="red_button">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="draw_indicator">False</property>
+                    <property name="group">white_button</property>
+                    <signal name="toggled" handler="color_changed" swapped="no"/>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <style>
+                      <class name="red"/>
+                    </style>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkRadioButton" id="blue_button">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="draw_indicator">False</property>
+                    <property name="group">white_button</property>
+                    <signal name="toggled" handler="color_changed" swapped="no"/>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <style>
+                      <class name="blue"/>
+                    </style>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+                <style>
+                  <class name="linked"/>
+                </style>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="resize">False</property>
+            <property name="shrink">True</property>
+          </packing>
+        </child>
+        <child>
+          <object class="DFGameViewport" id="viewport">
+            <property name="visible">True</property>
+            <property name="app_paintable">True</property>
+            <property name="can_focus">True</property>
+            <property name="events">GDK_POINTER_MOTION_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK | GDK_KEY_PRESS_MASK | GDK_KEY_RELEASE_MASK | GDK_STRUCTURE_MASK | GDK_SCROLL_MASK</property>
+            <property name="has_depth_buffer">True</property>
+            <signal name="enter-notify-event" handler="on_viewport_enter" swapped="no"/>
+            <signal name="leave-notify-event" handler="on_viewport_leave" swapped="no"/>
+            <signal name="resize" handler="on_resize" swapped="no"/>
+          </object>
+          <packing>
+            <property name="resize">True</property>
+            <property name="shrink">True</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <child type="titlebar">
+      <object class="GtkHeaderBar">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="title">Cloudy Editor</property>
+        <child>
+          <object class="GtkButton" id="bt_new">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="new_requested" swapped="no"/>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="icon_name">document-new-symbolic</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="bt_load">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="load_requested" swapped="no"/>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="icon_name">document-open-symbolic</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="bt_save">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="save_requested" swapped="no"/>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="icon_name">document-save-symbolic</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToggleButton">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="toggled" handler="game_toggle" swapped="no"/>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="icon_name">media-playback-start-symbolic</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="pack_type">end</property>
+            <property name="position">3</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

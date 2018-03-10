@@ -1,0 +1,18 @@
+.white {
+    background: #777;
+}
+.white:checked {
+    background: #fff;
+}
+.blue {
+    background: #007;
+}
+.blue:checked {
+    background: #00f;
+}
+.red {
+    background: #700;
+}
+.red:checked {
+    background: #f00;
+}

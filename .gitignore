@@ -1,0 +1,12 @@
+# Ignore temp dirs
+build
+subprojects/dfgame
+subprojects/glew-2.1.0
+subprojects/glfw
+subprojects/packagecache
+
+# Ignore Glade backups
+*.ui~
+
+# Ignore tags
+tags

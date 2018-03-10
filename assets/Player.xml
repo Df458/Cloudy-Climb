@@ -1,0 +1,8 @@
+<spriteset>
+    <animation frame_count="1" orients="1" file="Player.png"/>
+    <animation name="Falling" autoplay="true" autoloop="false" default_on_finish="false" frame_count="5" orients="1" fps="10" file="Player_Fall.png"/>
+    <animation name="Bounce" frame_count="1" orients="1" fps="2" file="Player_Bounce.png"/>
+    <animation name="Super Bounce" autoplay="true" autoloop="false" frame_count="7" orients="1" fps="15" file="Player_Spin.png"/>
+    <animation name="Dead" frame_count="1" orients="1" default_on_finish="false" file="Player_Dead.png"/>
+    <animation name="Win" frame_count="14" orients="1" fps="20" autoloop="true" file="Player_Win.png"/>
+</spriteset>

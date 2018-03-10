@@ -1,0 +1,6 @@
+<spriteset>
+    <animation frame_count="1" orients="1" file="Cloud_Strong.png"/>
+    <animation name="Strong Bounce" frame_count="6" orients="1" fps="20" file="Cloud_Strong_Bounce.png"/>
+    <animation name="Red" frame_count="1" orients="2" default_on_finish="false" file="Cloud_Red.png"/>
+    <animation name="Blue" frame_count="1" orients="2" default_on_finish="false" file="Cloud_Blue.png"/>
+</spriteset>

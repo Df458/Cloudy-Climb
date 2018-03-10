@@ -1,0 +1,5 @@
+<spriteset>
+    <animation autoplay="true" autoloop="true" frame_count="8" orients="1" fps="10" file="SpikeBall.png"/>
+    <animation name="Red" autoplay="true" autoloop="true" frame_count="8" orients="2" fps="10" file="SpikeBall_Red.png"/>
+    <animation name="Blue" autoplay="true" autoloop="true" frame_count="8" orients="2" fps="10" file="SpikeBall_Blue.png"/>
+</spriteset>

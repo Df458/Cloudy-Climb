@@ -1,0 +1,4 @@
+<spriteset>
+    <animation autoplay="true" autoloop="true" frame_count="14" orients="1" fps="10" file="Bonus.png"/>
+    <animation name="Collected" autoplay="true" frame_count="8" orients="1" fps="20" default_on_finish="false" file="Bonus_Collected.png"/>
+</spriteset>
