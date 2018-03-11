@@ -140,8 +140,9 @@ void update_player(float dt) {
             case PLAYER_DEAD:
                 player_velocity.y += GRAVITY * dt;
 
-                if(position.y > cam_position.y + 640 && transition_to(reset_level))
-                    play_audio(a_dead, true, false);
+                if(position.y > cam_position.y + 640 && transition_to(reset_level)) {
+                    play_audio(a_dead, false, false);
+                }
 
                 position.y += player_velocity.y * dt;
             break;
