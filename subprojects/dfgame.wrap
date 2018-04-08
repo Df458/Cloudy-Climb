@@ -1,4 +1,4 @@
 [wrap-git]
 directory = dfgame
 url = https://github.com/Df458/dfgame
-revision = head
+revision = e6d43a31fc2efdd9df22c8e52c2650024712e24f

@@ -47,10 +47,6 @@ void load_game() {
         fclose(unlocks_file);
     }
 
-    for(uint8 i = 0; i < LEVEL_COUNT; ++i) {
-        info("%d", get_unlocked(i));
-    }
-
     sfree(path);
 }
 
